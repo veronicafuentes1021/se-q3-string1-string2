@@ -61,8 +61,8 @@ def both_ends(s):
 
 
 def fix_start(s):
-    # your code here
-    return
+    star_string = s.replace(s[0], "*")
+    return s[0] + star_string[1:]
 
 
 # D. mix_up
