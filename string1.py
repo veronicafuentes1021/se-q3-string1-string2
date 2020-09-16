@@ -76,8 +76,7 @@ def fix_start(s):
 
 
 def mix_up(a, b):
-    # your code here
-    return
+    return b[:2] + a[2:] + " " + a[:2] + b[2:]
 
 
 # Provided simple test() function used in main() to print
