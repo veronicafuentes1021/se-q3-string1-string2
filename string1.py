@@ -4,7 +4,7 @@ Kenzie assignment: String1
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "???"
+__author__ = "Veronica Fuetnes"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -28,8 +28,10 @@ __author__ = "???"
 
 
 def donuts(count):
-    # your code here
-    return
+    if count >= 10:
+        return 'Number of donuts: many'
+    else:
+        return 'Number of donuts: ' + str(count)
 
 
 # B. both_ends
@@ -42,9 +44,10 @@ def donuts(count):
 
 
 def both_ends(s):
-    # your code here
-    return
-
+    if len(s) > 2 :
+        return str(s[:1]) + str(s[:-2])
+    else:
+        return ""
 
 # C. fix_start
 # Given a string s, return a string where all occurrences
