@@ -41,8 +41,13 @@ def verbing(s):
 
 
 def not_bad(s):
-    # your code here
-    return
+    not_loc = s.find("not")
+    bad_loc = s.find("bad")
+    if bad_loc > not_loc > 0 :
+        return s[:not_loc] + "good" + s[bad_loc+3:]
+    else:
+        return s
+
 
 
 # F. front_back
