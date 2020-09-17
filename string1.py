@@ -46,8 +46,7 @@ def donuts(count):
 def both_ends(s):
     if len(s) < 2 :
         return "" 
-    else:
-        return str(s[:2]) + str(s[-2:])
+    return str(s[:2]) + str(s[-2:])
 
 # C. fix_start
 # Given a string s, return a string where all occurrences

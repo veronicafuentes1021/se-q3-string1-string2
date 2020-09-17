@@ -61,8 +61,25 @@ def not_bad(s):
 
 
 def front_back(a, b):
-    # your code here
-    return
+    rem1 = len(a) % 2
+    rem2 = len(b) % 2
+
+    half = len(a) // 2
+    middle = len(b) // 2
+
+    halfo = (len(a) + 2) //2
+    middleo = (len(b) + 2) //2
+
+    if rem1 > 0 & rem2 == 0 :
+        return a[:halfo] + b[:middleo] + a[halfo:] + b[middleo:]
+    elif rem2 > 0 & rem1 == 0:
+        return a[:half] + b[:middleo] + a[half:] + b[middleo:]
+    else:
+        return a[:half] + b[:middle] + a[half:] + b[middle:]
+        # return a[:half] + b[:middle] + a[half:] + b[middle:]
+
+    # return "first " + a + " then " + b + " mine " + a[:half] + " " + b[:middle] + " " + a[half:] + " " + b[middle:]
+    
 
 
 # Provided simple test() function used in main() to print
