@@ -23,7 +23,7 @@ __author__ = "Veronica Fuentes"
 
 
 def verbing(s):
-    if len(s) < 3 :
+    if len(s) < 3:
         return s
     elif s.endswith("ing"):
         return s + "ly"
@@ -43,11 +43,10 @@ def verbing(s):
 def not_bad(s):
     not_loc = s.find("not")
     bad_loc = s.find("bad")
-    if bad_loc > not_loc > 0 :
+    if bad_loc > not_loc > 0:
         return s[:not_loc] + "good" + s[bad_loc+3:]
     else:
         return s
-
 
 
 # F. front_back
@@ -67,19 +66,16 @@ def front_back(a, b):
     half = len(a) // 2
     middle = len(b) // 2
 
-    halfo = (len(a) + 2) //2
-    middleo = (len(b) + 2) //2
+    halfo = (len(a) + 2) // 2
+    middleo = (len(b) + 2) // 2
 
-    if rem1 > 0 & rem2 == 0 :
+    if rem1 > 0 & rem2 == 0:
         return a[:halfo] + b[:middleo] + a[halfo:] + b[middleo:]
     elif rem2 > 0 & rem1 == 0:
         return a[:half] + b[:middleo] + a[half:] + b[middleo:]
     else:
         return a[:half] + b[:middle] + a[half:] + b[middle:]
         # return a[:half] + b[:middle] + a[half:] + b[middle:]
-
-    # return "first " + a + " then " + b + " mine " + a[:half] + " " + b[:middle] + " " + a[half:] + " " + b[middle:]
-    
 
 
 # Provided simple test() function used in main() to print
